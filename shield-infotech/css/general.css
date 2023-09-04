@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+
+}
+
+body {
+  font-family: "Sofia Sans", "Montserrat", "Rubik", "Inter", sans-serif;
+  background-color: #ffff;
+  line-height: 1;
+  font-weight: 400;
+  cursor: default;
+  overflow: hidden;
+
+}
+
+.container {
+  max-width: 120rem;
+  padding: 0 4.8rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 3.2rem;
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 3.2rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+h1 {
+  font-size: 4.5rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+h3 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 4.8rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+  line-height: 1;
+  margin-bottom: 3rem;
+  padding: 2.4rem 0;
+}
+
+p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 2.4rem;
+}
+
+
+.center {
+  text-align: center;
+}
+
+.bottom {
+  margin-bottom: 4.8rem;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  padding: 1.6rem 3.2rem;
+  text-transform: uppercase;
+  background-color: #343a40;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 600;
+  outline: none;
+  margin-right: 1.2rem;
+  border: none;
+  border-radius: 1.2rem;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #c92a2a;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn--form {
+  background-color: blue;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: red;
+  color: #fff;
+}
+
+a,
+ul,
+li {
+  font-size: 2.4rem;
+  text-decoration: none;
+  list-style: none;
+}
+
+a:link,
+a:visited {
+  color: black;
+  font-weight: 800;
+}
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+}
+
+.carousel-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.carousel-button {
+  cursor: pointer;
+  padding: 1rem;
+  width: 4.8rem;
+  height: 4.8rem;
+  margin: 0 5px;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.carousel-button:hover {
+  background: aqua;
+}
+
+.bottomAnim {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(100%);
+  transition: all 0.5s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+@media (prefers-reduced-motion) {
+  .bottomAnim {
+    transition: none;
+  }
+}
