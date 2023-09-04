@@ -1,0 +1,360 @@
+#progress {
+  display: grid;
+  background-color: #5f3dc4;
+  position: fixed;
+  bottom: 2rem;
+  right: 1rem;
+  height: 6rem;
+  width: 6rem;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+#progress-value {
+  display: block;
+  height: calc(100% - 1rem);
+  width: calc(100% - 1rem);
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  cursor: pointer;
+  place-items: center;
+  font-size: 3rem;
+  color: #001a2e;
+  z-index: 3;
+}
+
+#back-img {
+  width: 5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  stroke: #000;
+}
+
+#progress-value:link,
+#progress-value:visited {
+  cursor: pointer;
+}
+
+#progress-value:hover,
+#progress-value:active {
+  background-color: #f3f0ff;
+  transition: all 0.4s;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/* ***************************************************** */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 9.6rem;
+  padding: 4.8rem;
+  position: relative;
+  background: linear-gradient(90deg,
+      hsla(356, 68%, 91%, 1) 0%,
+      hsla(159, 57%, 81%, 1) 0%,
+      hsla(188, 65%, 80%, 1) 17%,
+      hsla(168, 55%, 80%, 1) 42%,
+      hsla(140, 60%, 82%, 1) 73%);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shield-log {
+  width: 100%;
+
+}
+
+.header-title {
+  letter-spacing: 0.5rem;
+}
+
+header img {
+  height: 7rem;
+  margin-right: 1.2rem;
+  cursor: pointer;
+}
+
+.header-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.main-nav-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+li a:link,
+li a:visited {
+  color: #000000;
+  padding: 1.6rem 1.6rem;
+  font-weight: 800;
+}
+
+li a:hover,
+li a:active {
+  color: #fff;
+  background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF);
+  border-radius: 4rem;
+}
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+}
+
+.icon-mobile-close {
+  display: none;
+}
+
+/* ************************************************************* */
+/* Hero Section */
+/* *********************************************************** */
+
+.section-hero {
+  height: 100vh;
+  padding: 4.8rem 0 9.6rem 0;
+  background: linear-gradient(90deg,
+      hsla(356, 68%, 91%, 1) 0%,
+      hsla(159, 57%, 81%, 1) 0%,
+      hsla(188, 65%, 80%, 1) 17%,
+      hsla(168, 55%, 80%, 1) 42%,
+      hsla(140, 60%, 82%, 1) 73%);
+}
+
+.flexible {
+  margin-top: 4.8rem;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero-img-box {
+  display: flex;
+  align-items: center;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+/* ********************************************************* */
+/* How it works */
+/* ********************************************************* */
+
+.section-how {
+  padding: 9.6rem 0;
+}
+
+.section-how img {
+  width: 100%;
+  height: 20rem;
+  margin-bottom: 2rem;
+  border-top-right-radius: 2.4rem;
+  border-top-left-radius: 2.4rem;
+}
+
+.flex {
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-evenly;
+  border-radius: 3.2rem;
+  box-shadow: 1px 2px 5px gray;
+}
+
+.flex:hover {
+  transform: scale(1.1);
+}
+
+/* ********************************************************* */
+/* Careers */
+/* ********************************************************* */
+
+.section-careers {
+  padding: 4.8rem 0;
+}
+
+.careers-content-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.content-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+
+.content-img-box {
+  width: 100%;
+}
+
+/* ********************************************************* */
+/* Projects */
+/* ********************************************************* */
+
+.form-img {
+  width: 100%;
+  height: auto;
+  padding: 2.4rem;
+}
+
+.section-cta {
+  padding: 4.8rem 0 12.8rem;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 3rem;
+  background: linear-gradient(90deg,
+      hsla(168, 73%, 50%, 1) 62%,
+      hsla(0, 0%, 2%) 62%);
+  overflow: hidden;
+}
+
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #000;
+}
+
+.cta .heading-secondary {
+  color: inherit;
+  margin-bottom: 3.2rem;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.cta-img-box {
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 0.9rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+
+/* ******************************************* */
+
+/* Projects */
+/* ******************************************* */
+.section-projects {
+  padding: 4.8rem 0;
+}
+
+/* ******************************************* */
+/* Footer */
+/* ******************************************* */
+
+footer {
+  background: linear-gradient(90deg,
+      hsla(205, 46%, 10%, 1) 0%,
+      hsla(191, 28%, 23%, 1) 50%,
+      hsla(207, 41%, 27%, 1) 100%);
+  color: white;
+  margin-bottom: 0;
+}
+
+footer h4 {
+  color: whitesmoke;
+}
+
+footer p {
+  color: white;
+}
+
+.footer-img {
+  width: 100%;
+  height: 100%;
+}
+
+.connect {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: start;
+}
+
+.social-icons {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-right: 1.5rem;
+}
+
+footer a {
+  display: flex;
+}
+
+footer p:hover {
+  color: yellow;
+
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Popup</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="popupContainer" class="popup">
+      <div class="popup-content">
+        <span class="close" id="closePopupButton">&times;</span>
+        <h2>Popup Form</h2>
+        <form id="popupForm">
+          <!-- Your form fields go here -->
+          <input type="text" name="name" placeholder="Name" />
+          <input type="email" name="email" placeholder="Email" />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      // Get references to the elements
+      const closePopupButton = document.getElementById("closePopupButton");
+      const popupContainer = document.getElementById("popupContainer");
+
+      // Function to close the popup
+      function closePopup() {
+        popupContainer.style.display = "none";
+      }
+
+      // Close the popup when the close button is clicked
+      closePopupButton.addEventListener("click", () => {
+        closePopup();
+      });
+
+      // Close the popup if the user clicks outside of it
+      window.addEventListener("click", (event) => {
+        if (event.target === popupContainer) {
+          closePopup();
+        }
+      });
+
+      // Prevent the form from submitting (for demonstration purposes)
+      const popupForm = document.getElementById("popupForm");
+      popupForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        // Handle form submission here or remove this event listener
+      });
+
+      // Show the popup when the page loads
+      // window.addEventListener("load", () => {
+      //   popupContainer.style.display = "block";
+      // });
+      setTimeout(() => {
+        popupContainer.style.display = "block";
+      }, 10000);
+    </script>
+  </body>
+</html>
