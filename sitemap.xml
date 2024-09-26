@@ -35,6 +35,11 @@
         <priority>0.7</priority>
     </url>
     <url>
+        <loc>https://justtrytech.com/careers/</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
         <loc>https://justtrytech.com/centralized-crypto-exchange-development/</loc>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
