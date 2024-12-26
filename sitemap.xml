@@ -133,6 +133,11 @@
         <priority>0.7</priority>
     </url>
     <url>
+        <loc>https://justtrytech.com/defi-dex-aggregator-platform-development/</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
         <loc>https://justtrytech.com/blog/</loc>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
