@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://justtrytech.com/sitemap-index.xml
-Host: https://justtrytech.com
