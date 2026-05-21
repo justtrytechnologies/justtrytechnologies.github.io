@@ -1,0 +1,5 @@
+Project: Justtry Technologies
+Website: https://justtrytech.com
+Description: Software development company providing web and mobile solutions.
+Services: Web Development, Mobile App Development, UI/UX Design
+Contact: info@justtrytech.com
